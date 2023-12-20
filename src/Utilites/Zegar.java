@@ -37,7 +37,6 @@ public class Zegar {
                         for (int j = 0; j < mieszkaniec.getListaUmow().size(); j++) {
                             Umowa umowa = mieszkaniec.getListaUmow().get(j);
                             if (umowa.czyNadalTrwaNajem(czasGlobalny)) {
-
                                 continue;
                             }
                             umowa.wezwanieDoZaplaty = new File(umowa.getPomieszczenie().toString() + " ZADLUZONE");
